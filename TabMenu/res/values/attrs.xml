@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageTextButton">
+        <attr name="Width" format="reference|dimension"></attr>
+        <attr name="Height" format="reference|dimension"></attr>
+        <attr name="Text" format="reference|string"></attr>
+        <attr name="TextColor" format="reference|color"></attr>
+        <attr name="Style" >
+            <enum name="TextLeft" value="0"></enum>
+            <enum name="TextRight" value="1"></enum>
+            <enum name="TextTop" value="2"></enum>
+            <enum name="TextBottom" value="3"></enum>
+        </attr>
+        <attr name="Align">
+            <enum name="Center" value="0"></enum>
+            <enum name="Left" value="1"></enum>
+            <enum name="Right" value="2"></enum>
+        </attr>
+        <attr name="IsSelected" format="boolean"></attr>
+        <attr name="TextSize" format="reference|dimension"></attr>
+        <attr name="Src" format="reference|integer"></attr>
+        <attr name="ImageWidth" format="reference|dimension"></attr>
+        <attr name="ImageHeight" format="reference|dimension"></attr>
+        <attr name="Tint" format="color"></attr>
+        <attr name="BgColorSelected" format="reference|color"></attr>
+        <attr name="BgColor" format="reference|color"></attr>
+        <attr name="TintSelected" format="reference|color" ></attr>
+    </declare-styleable>
+    <declare-styleable  name="TabMenu">
+        <attr name="Center_ImageHeight" format="reference|dimension"></attr>
+        <attr name="Center_ImageWidth" format="reference|dimension"></attr>
+        <attr name="Center_Tint" format="reference|color"></attr>
+        <attr name="SelectWitch" format="integer"></attr>
+    </declare-styleable>
+</resources>
