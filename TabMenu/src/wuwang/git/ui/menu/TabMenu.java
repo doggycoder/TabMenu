@@ -66,7 +66,7 @@ public class TabMenu extends LinearLayout{
 		getAttrs(context, attrs);
 	}
 	
-	//xml´´½¨UIÊ±£¬³õÊ¼»¯²ÎÊı
+	//xmlåˆ›å»ºUIæ—¶ï¼Œåˆå§‹åŒ–å‚æ•°
 	private void getAttrs(Context context,AttributeSet attrs){
 		TypedArray tarr=getContext().obtainStyledAttributes(attrs, R.styleable.ImageTextButton);
 		
@@ -91,7 +91,7 @@ public class TabMenu extends LinearLayout{
 		tarr.recycle();
 	}
 	
-	//java´´½¨UIÊ±£¬³õÊ¼»¯²ÎÊı
+	//javaåˆ›å»ºUIæ—¶ï¼Œåˆå§‹åŒ–å‚æ•°
 	private void InitAttrs(Context context){
 		V_Style=V_STYLE_BOTTOM;
 		V_Align=V_ALIGN_CENTER;
@@ -105,13 +105,13 @@ public class TabMenu extends LinearLayout{
 		V_BgColorSelected= V_BgColor;
 	}
 	
-	//³õÊ¼»¯UI²ÎÊı
+	//åˆå§‹åŒ–UIå‚æ•°
 	private void initUI(){
 		this.setOrientation(LinearLayout.HORIZONTAL);
 		MenuItem=new ArrayList<>();
 	}
 	
-	//³õÊ¼»¯²Ëµ¥£¬´«ÈëMenuitemµÄÎÄ×ÖÊı×éºÍÍ¼Æ¬Êı×é£¬Í¼Æ¬Î»ÖÃ¶ÔÓ¦ÎÄ×ÖÎ»ÖÃ
+	//åˆå§‹åŒ–èœå•ï¼Œä¼ å…¥Menuitemçš„æ–‡å­—æ•°ç»„å’Œå›¾ç‰‡æ•°ç»„ï¼Œå›¾ç‰‡ä½ç½®å¯¹åº”æ–‡å­—ä½ç½®
 	public void MenuInit(String[] Menus,int[] Srcs){
 		menuNum=Menus.length>Srcs.length?Menus.length:Srcs.length;
 		MenuItem.clear();
@@ -132,13 +132,13 @@ public class TabMenu extends LinearLayout{
 		OpenClick();
 	}
 	
-	////³õÊ¼»¯²Ëµ¥£¬´«ÈëMenuitemµÄÎÄ×ÖÊı×éºÍÍ¼Æ¬Êı×é£¬²¢ÉèÖÃÖĞĞÄ²Ëµ¥£¬µÚÈı¸ö²ÎÊıÎªÖĞĞÄ²Ëµ¥Î»ÖÃ
+	////åˆå§‹åŒ–èœå•ï¼Œä¼ å…¥Menuitemçš„æ–‡å­—æ•°ç»„å’Œå›¾ç‰‡æ•°ç»„ï¼Œå¹¶è®¾ç½®ä¸­å¿ƒèœå•ï¼Œç¬¬ä¸‰ä¸ªå‚æ•°ä¸ºä¸­å¿ƒèœå•ä½ç½®
 	public void MenuInit(String[] Menus,int[] Srcs,int cPos){
 		MenuInit(Menus, Srcs);
 		SetCenterMenu(cPos);
 	}
 	
-	//ÉèÖÃÖĞĞÄ²Ëµ¥£¬²ÎÊıÎªÖĞĞÄ²Ëµ¥Î»ÖÃ£¬´Ó1¿ªÊ¼¡£´óÓÚ×Ó²Ëµ¥×ÜÊıÊ±ÎŞĞ§
+	//è®¾ç½®ä¸­å¿ƒèœå•ï¼Œå‚æ•°ä¸ºä¸­å¿ƒèœå•ä½ç½®ï¼Œä»1å¼€å§‹ã€‚å¤§äºå­èœå•æ€»æ•°æ—¶æ— æ•ˆ
 	public void SetCenterMenu(int position){
 		if(position>0&&position<=menuNum){
 			cMenu=MenuItem.get(position-1);
@@ -147,7 +147,7 @@ public class TabMenu extends LinearLayout{
 		}
 	}
 	
-	//Ñ¡Ôñ²Ëµ¥Ïî£¬²ÎÊıÎªÑ¡ÖĞÎ»ÖÃ£¬´óÓÚ1²»´óÓÚ×Ü²Ëµ¥Ïî¼õÖĞ¼ä²Ëµ¥
+	//é€‰æ‹©èœå•é¡¹ï¼Œå‚æ•°ä¸ºé€‰ä¸­ä½ç½®ï¼Œå¤§äº1ä¸å¤§äºæ€»èœå•é¡¹å‡ä¸­é—´èœå•
 	public void SelectMenu(int position){
 		if(position>0&&position<=MenuItem.size()){
 			ReSetSelectWhich();
@@ -155,12 +155,12 @@ public class TabMenu extends LinearLayout{
 		}
 	}
 	
-	//È¡Ïû±»Ñ¡ÖĞµÄ²Ëµ¥ÏîµÄ×´Ì¬
+	//å–æ¶ˆè¢«é€‰ä¸­çš„èœå•é¡¹çš„çŠ¶æ€
 	private void ReSetSelectWhich(){
 		MenuItem.get(V_SelectWitch-1).Selected(false);
 	}
 	
-	//Ñ¡ÔñÄ³¸ö²Ëµ¥Ïî
+	//é€‰æ‹©æŸä¸ªèœå•é¡¹
 	private void SetSelectWhich(int position){
 		V_SelectWitch=position;
 		MenuItem.get(V_SelectWitch-1).Selected(true);
@@ -218,6 +218,7 @@ public class TabMenu extends LinearLayout{
 	
 	public void setOnTabMenuClickListener(OnTabMenuClickListener tListener){
 		this.tListener=tListener;
+		OpenClick();
 	}
 	
 	
