@@ -9,7 +9,7 @@ import android.view.MenuItem;
 public class MainActivity extends ActionBarActivity {
 
 	private TabMenu tMenu;
-	private String[] menus=new String[]{"¹ã³¡","È¦×Ó","Ìí¼Ó","Ò¹»°","¸ü¶à"};
+	private String[] menus=new String[]{"Â¹Ã£Â³Â¡","ÃˆÂ¦Ã—Ã“","ÃŒÃ­Â¼Ã“","Ã’Â¹Â»Â°","Â¸Ã¼Â¶Ã "};
 	private int[] srcs=new int[]{R.drawable.guangchang,R.drawable.quanzi,R.drawable.center,R.drawable.taolun,R.drawable.more};
 	
 	@Override
@@ -18,7 +18,6 @@ public class MainActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_main);
 		tMenu=(TabMenu) findViewById(R.id.TMENU);
 		tMenu.MenuInit(menus, srcs, 3);
-		tMenu.OpenClick();
 	}
 
 	@Override
