@@ -17,7 +17,7 @@
   在Activity中定义：
   
   	private TabMenu tMenu;    //TabMenu
-  	private String[] menus=new String[]{"广场","圈子","添加","夜话","更多"};  //菜单项的文字
+  	private String[] menus=new String[]{"菜单一","菜单二","添加","菜单三","菜单四"};  //菜单项的文字
 	private int[] srcs=new int[]{R.drawable.guangchang,R.drawable.quanzi,
 				R.drawable.center,R.drawable.taolun,R.drawable.more};   //菜单项的图标
 
