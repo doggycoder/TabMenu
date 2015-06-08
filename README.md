@@ -6,12 +6,13 @@
   
   在xml布局文件中添加：
   
-   <wuwang.git.ui.menu.TabMenu 
-      android:layout_width="match_parent"
-      android:layout_height="55dp"
-      android:layout_alignParentBottom="true"
-      android:id="@+id/TMENU"
-      >
+	<wuwang.git.ui.menu.TabMenu
+      	android:layout_width="match_parent"
+      	android:layout_height="55dp"
+      	android:layout_alignParentBottom="true"	
+      	android:id="@+id/TMENU"
+        >
+	</wuwang.git.ui.menu.TabMenu>
 
 
   在Activity中定义：
